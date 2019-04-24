@@ -23,10 +23,11 @@ function viewCart() {
   }
   var i = 0;
   var statement = ["In your cart, you have"];
-  for (i=0; i < cart.length; i++) {
+  var cartItems = []
+  for (i=0; i < cart.length - 1 ; i++) {
     `${cart[i].itemName} at ${cart[i].itemPrice}`
-
   }
+    cartItems.join(", ")
 }
 
 function total() {

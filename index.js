@@ -24,7 +24,7 @@ function viewCart() {
   var i = 0;
   var statement = ["In your cart, you have"];
   for (i=0; i < cart.length; i++) {
-
+    `${cart[i].itemName} at ${cart[i].itemPrice}`
 
   }
 }

@@ -28,6 +28,8 @@ function viewCart() {
     `${cart[i].itemName} at ${cart[i].itemPrice}`
   }
     cartItems.join(", ")
+    statement.push(cartItems)
+    statement.join("")
 }
 
 function total() {

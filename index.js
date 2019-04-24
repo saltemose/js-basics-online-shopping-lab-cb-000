@@ -43,6 +43,7 @@ function total() {
   for (i=0; i < cart.length; i++){
       sum = sum + cart[i].itemPrice
   }
+  return sum
 }
 
 function removeFromCart(item) {

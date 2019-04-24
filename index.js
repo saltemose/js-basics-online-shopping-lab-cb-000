@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var item = JSON.parse(item)
+ var item = {itemName: item, itemPrice: Math.floor(Math.random()*100)}
  cart.push(item)
 }
 

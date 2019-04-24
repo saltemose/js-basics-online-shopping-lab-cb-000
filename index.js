@@ -31,6 +31,7 @@ function viewCart() {
     cartItems.join(", ")
     statement.push(cartItems)
     statement.join("")
+    return statement
 }
 
 function total() {

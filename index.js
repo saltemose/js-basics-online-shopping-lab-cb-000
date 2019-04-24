@@ -30,8 +30,7 @@ function viewCart() {
     cartItems.push(`${cart[cart.length-1].itemName} at ${cart[cart.length-1].itemPrice}`)
     cartItems.join(", ")
     statement.push(cartItems)
-    statement.join("")
-    return statement
+      return statement.join("")
 }
 
 function total() {

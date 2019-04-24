@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var item = item
+ const item = item
  cart.push(item)
 }
 

@@ -21,6 +21,9 @@ function viewCart() {
   if (cart.length == 0) {
     return "Your shopping cart is empty."
   }
+  if (cart.length == 1){
+    return `In your cart, you have ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
+  }
   var i = 0;
   var statement = ["In your cart, you have"];
   var cartItems = []

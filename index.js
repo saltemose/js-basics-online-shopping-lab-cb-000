@@ -27,8 +27,8 @@ function viewCart() {
   for (i=0; i < cart.length - 1 ; i++) {
     cartItems.push(`${cart[i].itemName} at ${cart[i].itemPrice}`)
   }
-    cartItems.push(`and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`)
     cartItems.join(", ")
+    cartItems.push(`and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`)
     statement.push(cartItems)
       return statement.join("")
 }
